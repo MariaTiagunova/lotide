@@ -21,5 +21,8 @@ const countLetters = (sentence) => {
 };
 
 // Test
-console.log(countLetters('lighthouse in the house'));
-console.log(countLetters('Lighthouse Light'));
+// console.log(countLetters('lighthouse in the house'));
+// console.log(countLetters('Lighthouse Labs'));
+assertEqual(countLetters('lighthouse in the house')["e"], 3);
+assertEqual(countLetters('Lighthouse Labs')["l"], undefined);
+assertEqual(countLetters('Lighthouse Labs')["L"], 2);
