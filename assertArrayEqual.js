@@ -10,17 +10,17 @@ const eqArrays = (arr1, arr2) => {
   return true;
 };
 
-const assertArraysEqual = (arr1, arr2) => {
-  if (eqArrays(arr1, arr2)) {
-    console.log(`✅ Arrays are equal: ${arr1} === ${arr2}`);
+const assertArraysEqual = (actual, expected) => {
+  if (eqArrays(actual, expected)) {
+    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`❌ Arrays are not equal: ${arr1} !== ${arr2}`);
+    console.log(`❌ Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
-assertArraysEqual([1, 2, 3], [3, 2, 1]);
-assertArraysEqual(['cat', 'dog', 'parrot'], ['cat', 'dog', 'parrot']);
-assertArraysEqual([1, 3, 3], [1, 2, 3]);
-assertArraysEqual([1, 2, 'meow'], [1, 2, 3]);
-assertArraysEqual([1], [1, 2, 3]);
+assertArraysEqual([1, 2, 3], [1, 2, 3]); // pass
+assertArraysEqual([1, 2, 3], [3, 2, 1]); // fail
+assertArraysEqual(['cat', 'dog', 'parrot'], ['cat', 'dog', 'parrot']); //pass
+assertArraysEqual([1, 3, 3], [1, 2, 3]); // fail
+assertArraysEqual([1, 2, 'meow'], [1, 2, 3]); // fail
+assertArraysEqual([1], [1, 2, 3]); //fail
