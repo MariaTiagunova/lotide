@@ -41,5 +41,5 @@ The following functions are currently implemented:
 * `eqObjects(obj1, obj2)`: takes in 2 objects and return true if they are equal and false otherwise;
 * `assertObjectsEqual(obj1, obj2)`: takes in 2 objects and returns true if they are equal and false otherwise;
 * `map(array, callback)`: takes in an array and a callback and returns a new array based on the results of the callback on each item in the array;
-* `takeUntil(array, callback): takes in an array and callback and returns a slice of the array based on the criteria specified in the callback;
+* `takeUntil(array, callback)`: takes in an array and callback and returns a slice of the array based on the criteria specified in the callback;
 * `findKey(object, callback)`: takes in an object and callback and returns the first key that meets the criteria specified in callback;
