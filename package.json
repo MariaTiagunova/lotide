@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@maria-tia/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A mini clone of the Lodash (https://lodash.com) library, published for learning purposes",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/MariaTiagunova/lotide.git"
   },
-  "author": "",
+  "author": "Maria Tiagunova",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MariaTiagunova/lotide/issues"
